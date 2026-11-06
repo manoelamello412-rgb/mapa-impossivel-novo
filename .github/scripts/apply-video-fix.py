@@ -45,16 +45,16 @@ replacements = [
         '<video id="experience-video" controls playsinline',
     ),
     (
-        """  const sync=()=>{
-   if(!homeVisible())return;
-   iv.muted=!unlocked||otherPlaying();
-  };
+        """ const sync=()=>{
+  if(!homeVisible())return;
+  iv.muted=!unlocked||otherPlaying();
+ };
 """,
-        """  const sync=()=>{
-   if(!homeVisible())return;
-   iv.defaultMuted=false;
-   iv.muted=!unlocked||otherPlaying();
-  };
+        """ const sync=()=>{
+  if(!homeVisible())return;
+  iv.defaultMuted=false;
+  iv.muted=!unlocked||otherPlaying();
+ };
 """,
     ),
     (
